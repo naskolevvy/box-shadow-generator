@@ -1,0 +1,44 @@
+.<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">    </head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form onsubmit="createContainer()" >
+            <input id = 'input-width' placeholder="width" type="text">
+            <input id = 'input-height' placeholder="height" type="text">
+            <label for="dynamicDrawing">dynamic drawing</label>
+            <input type="checkbox" placeholder="dynamic Size" name="dynamic" id="dynamicDrawing">
+            <div class = 'checkboxChoise'>
+                <input id = 'input-name' placeholder="variable Name" type="text">
+                <label for="cssVar">Css</label>
+                <input type="radio" placeholder="css variable" name="variableType" id="cssVar">
+                <label for="scssVar">Scss</label>
+                <input type="radio" placeholder="scss variable" name="variableType" id="scssVar">
+            </div>
+           
+            <button type="submit">Create Container</button>
+        </form>
+        <input id = 'draw-color' placeholder="color" type="text">
+        <button onclick="colorChange()" id = 'chage-color'>Change Color</button>
+        <button id = 'undoButton'>Undo</button>
+
+   
+        
+        <div id = 'container' class = 'container-class'>
+            <div id = 'draw' class="draw-container"></div>
+        </div>
+        <div id = 'box-shadow-log' class = 'log'></div>
+        <button onclick="copyBoxShadow()">Copy Box Shadow</button>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

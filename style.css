@@ -1,0 +1,32 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+.container-class{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    border: 1px solid black;
+}
+.draw-container{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+}
+.log{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    overflow-y: auto;
+    background-color: white;
+}
+.checkboxChoise{
+    display: none;
+}
